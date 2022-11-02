@@ -1,4 +1,4 @@
-package com.example.addon.commands;
+package com.patsore.liveoverflowaddon.commands;
 
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import meteordevelopment.meteorclient.systems.commands.Command;

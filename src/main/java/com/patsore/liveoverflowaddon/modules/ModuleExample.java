@@ -1,6 +1,6 @@
-package com.example.addon.modules;
+package com.patsore.liveoverflowaddon.modules;
 
-import com.example.addon.Addon;
+import com.patsore.liveoverflowaddon.Addon;
 import meteordevelopment.meteorclient.systems.modules.Module;
 
 public class ModuleExample extends Module {

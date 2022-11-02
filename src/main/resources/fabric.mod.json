@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "liveoverflowaddon",
   "version": "${version}",
   "name": "Addon Template",
-  "description": "An addon template for the Meteor addons.",
+  "description": "An addon for the LiveOverflow server",
   "authors": [
-    "seasnail"
+    "Patsore"
   ],
   "contact": {
-    "repo": "https://github.com/MeteorDevelopment/meteor-addon-template"
+    "repo": "https://github.com/patsore/LiveOverflowAddon"
   },
   "icon": "assets/template/icon.png",
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "com.example.addon.Addon"
+      "com.patsore.liveoverflowaddon.Addon"
     ]
   },
   "mixins": [

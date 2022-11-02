@@ -1,6 +1,6 @@
-package com.example.addon.hud;
+package com.patsore.liveoverflowaddon.hud;
 
-import com.example.addon.Addon;
+import com.patsore.liveoverflowaddon.Addon;
 import meteordevelopment.meteorclient.systems.hud.HudElement;
 import meteordevelopment.meteorclient.systems.hud.HudElementInfo;
 import meteordevelopment.meteorclient.systems.hud.HudRenderer;

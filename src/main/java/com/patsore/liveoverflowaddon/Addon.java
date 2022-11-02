@@ -1,9 +1,10 @@
-package com.example.addon;
+package com.patsore.liveoverflowaddon;
 
-import com.example.addon.commands.CommandExample;
-import com.example.addon.hud.HudExample;
-import com.example.addon.modules.ModuleExample;
+import com.patsore.liveoverflowaddon.commands.CommandExample;
+import com.patsore.liveoverflowaddon.hud.HudExample;
+import com.patsore.liveoverflowaddon.modules.ModuleExample;
 import com.mojang.logging.LogUtils;
+import com.patsore.liveoverflowaddon.modules.WorldGuardBypass;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
 import meteordevelopment.meteorclient.systems.commands.Commands;
 import meteordevelopment.meteorclient.systems.hud.Hud;
@@ -14,15 +15,15 @@ import org.slf4j.Logger;
 
 public class Addon extends MeteorAddon {
     public static final Logger LOG = LogUtils.getLogger();
-    public static final Category CATEGORY = new Category("Example");
-    public static final HudGroup HUD_GROUP = new HudGroup("Example");
+    public static final Category CATEGORY = new Category("LiveOverflow");
+    public static final HudGroup HUD_GROUP = new HudGroup("LiveOverflow");
 
     @Override
     public void onInitialize() {
-        LOG.info("Initializing Meteor Addon Template");
+        LOG.info("Initializing LiveOverflowAddon");
 
         // Modules
-        Modules.get().add(new ModuleExample());
+        Modules.get().add(new WorldGuardBypass());
 
         // Commands
         Commands.get().add(new CommandExample());
@@ -38,6 +39,6 @@ public class Addon extends MeteorAddon {
 
     @Override
     public String getPackage() {
-        return "com.example.addon";
+        return "com.patsore.liveoverflowaddon";
     }
 }

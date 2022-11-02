@@ -1,8 +1,14 @@
 {
   "required": true,
-  "package": "com.example.addon.mixin",
+  "package": "com.patsore.liveoverflowaddon.mixin",
   "compatibilityLevel": "JAVA_17",
   "client": [],
+  "mixins": [
+    "PlayerPositionFullPacketMixin",
+    "PlayerPositionPacketMixin",
+    "LivingEntityMixin",
+    "WorldBorderMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   }
