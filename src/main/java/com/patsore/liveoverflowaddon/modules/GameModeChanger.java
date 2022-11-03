@@ -9,7 +9,7 @@ import net.minecraft.entity.player.PlayerAbilities;
 
 public class GameModeChanger extends Module{
     public GameModeChanger() {
-        super(Categories.Misc, "Gamemode Changer", "Change the gamemode");
+        super(Categories.Misc, "gamemode changer", "change the gamemode");
     }
 
     @Override
