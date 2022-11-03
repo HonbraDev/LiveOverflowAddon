@@ -2,6 +2,7 @@ package com.patsore.liveoverflowaddon;
 
 import com.patsore.liveoverflowaddon.commands.CommandExample;
 import com.patsore.liveoverflowaddon.hud.HudExample;
+import com.patsore.liveoverflowaddon.modules.GameModeChanger;
 import com.patsore.liveoverflowaddon.modules.ModuleExample;
 import com.mojang.logging.LogUtils;
 import com.patsore.liveoverflowaddon.modules.WorldGuardBypass;
@@ -26,6 +27,7 @@ public class Addon extends MeteorAddon {
 
         // Modules
         Modules.get().add(new WorldGuardBypass());
+        Modules.get().add(new GameModeChanger());
 
         // Commands
         Commands.get().add(new CommandExample());
