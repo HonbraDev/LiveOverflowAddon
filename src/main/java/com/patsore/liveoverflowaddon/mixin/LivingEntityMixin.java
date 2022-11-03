@@ -1,9 +1,12 @@
 package com.patsore.liveoverflowaddon.mixin;
 
 import com.patsore.liveoverflowaddon.modules.WorldGuardBypass;
+import meteordevelopment.meteorclient.systems.modules.movement.NoFall;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(net.minecraft.entity.LivingEntity.class)
 public class LivingEntityMixin {
@@ -12,4 +15,5 @@ public class LivingEntityMixin {
     private boolean isImmobile(net.minecraft.entity.LivingEntity livingEntity) {
         return WorldGuardBypass.isWorldGuardBypassEnabled;
     }
+
 }

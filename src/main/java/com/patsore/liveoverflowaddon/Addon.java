@@ -11,6 +11,8 @@ import meteordevelopment.meteorclient.systems.hud.Hud;
 import meteordevelopment.meteorclient.systems.hud.HudGroup;
 import meteordevelopment.meteorclient.systems.modules.Category;
 import meteordevelopment.meteorclient.systems.modules.Modules;
+import meteordevelopment.meteorclient.utils.player.TitleScreenCredits;
+import net.minecraft.client.gui.screen.CreditsScreen;
 import org.slf4j.Logger;
 
 public class Addon extends MeteorAddon {
@@ -30,6 +32,7 @@ public class Addon extends MeteorAddon {
 
         // HUD
         Hud.get().register(HudExample.INFO);
+
     }
 
     @Override

@@ -12,4 +12,6 @@ public class PlayerPositionPacketMixin {
     private static void init(Args args) {
         AntiHumanPlugin.onPositionPacket(args);
     }
+
+
 }
